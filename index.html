@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styleIndex.css" />
+        <link rel="stylesheet" href="style.css" />
         <title>Pile à puces</title>
     </head>
     <body>
@@ -65,8 +66,12 @@
             <p id="about-content">
                 Inscrivez vous à notre newsletter : <br>
                 <br>
-                <form action="">
-                    <input type="text" required>
+                <form class="newsletter-form" autocomplete="off" action="">
+                    <div class="input-container">
+                        <input type="text" id="newsletter" autocomplete="off" required>
+                        <label>Votre adresse mail</label>
+                    </div>
+                    
                     <input type="submit" value="S'inscrire à la newsletter" id="submit_newsletter">
                 </form>
                 
@@ -78,5 +83,9 @@
                 <br><br>
             </p>
         </div>
+
+        <footer>
+            <p class="footer"> &copy; 2022 Noémie Rappeneau</p>
+        </footer>
     </body>
 </html>
