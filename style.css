@@ -3,12 +3,12 @@
 
 :root {
     --dark-blue: #162852;
-    --light-blue :#51beda;
-    --grey-blue :#546683;
+    --light-blue: #51beda;
+    --grey-blue: #546683;
     --grey: #f5f6fa;
-  }
-  
-body{
+}
+
+body {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -16,8 +16,7 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
-
-.navbar{
+.navbar {
     display: flex;
     justify-content: end;
     box-sizing: border-box;
@@ -31,16 +30,16 @@ body{
     max-height: 15vh;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
-    color: var(--grey);;
+    color: var(--grey);
 }
 
 .navbar ul {
-    display: flex; 
+    display: flex;
 }
 
-.navbar ul li{
+.navbar ul li {
     margin: 3vh;
     font-size: 3vh;
 }
@@ -54,11 +53,24 @@ ul {
     list-style-type: none;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: flex-end;
     margin-right: 8vw;
     font-weight: lighter;
     color: var(--grey-blue);
-    
+}
+
+@media only screen and (max-width: 426px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navbar a {
+        color: palegreen;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
 }

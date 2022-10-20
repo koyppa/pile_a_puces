@@ -1,5 +1,4 @@
 .first-page {
- 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -7,8 +6,7 @@
     align-items: center;
 }
 
-
- #logo {
+#logo {
     max-width: 450px;
     padding-top: 0px;
 }
@@ -19,7 +17,7 @@
     border-radius: 3px;
     color: var(--grey);
     cursor: pointer;
-    text-align: center;;
+    text-align: center;
     font-size: 18px;
     line-height: 20px;
     width: 130px;
@@ -37,7 +35,7 @@
 
 .about-page {
     border: solid var(--dark-blue) 2px;
-    margin: 8vh ; 
+    margin: 8vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +50,7 @@
     margin-bottom: 10px;
 }
 
-#about-title-2{
+#about-title-2 {
     text-align: center;
     font-size: 35px;
     color: var(--dark-blue);
@@ -63,10 +61,9 @@
     margin: 0px 60px;
     font-size: 19px;
     text-align: justify;
-
 }
 
-#rs_link{
+#rs_link {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -75,15 +72,15 @@
     margin-top: 20px;
 }
 
-#logo_twitter{
-    max-width:  100px;
+#logo_twitter {
+    max-width: 100px;
 }
 
 #logo_instagram {
     max-width: 100px;
 }
 
-.newsletter-form{
+.newsletter-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,17 +88,17 @@
     gap: 10px;
 }
 
-#newsletter{
+#newsletter {
     width: 400px;
 }
 
-#submit_newsletter{
+#submit_newsletter {
     background-color: var(--dark-blue);
     border: 1px solid var(--dark-blue);
     border-radius: 3px;
     color: var(--grey);
     cursor: pointer;
-    text-align: center;;
+    text-align: center;
     font-size: 15px;
     line-height: 7px;
     width: 300px;
@@ -109,46 +106,94 @@
     text-decoration: none;
 }
 
-#submit_newsletter:hover{
+#submit_newsletter:hover {
     background-color: var(--grey);
     border: 1px solid var(--dark-blue);
     color: var(--dark-blue);
 }
 
-.input-container{
-	position:relative;
-	margin-bottom:25px;
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
 }
 
-.input-container label{
-	position:absolute;
-	top:0px;
-	left:0px;
-	font-size:16px;
-	color: var(--dark-blue);	
-	transition: all 0.5s ease-in-out;
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    color: var(--dark-blue);
+    transition: all 0.5s ease-in-out;
 }
 
-.input-container input{ 
-  border:0;
-  border-bottom:1px solid #555;  
-  background:transparent;
-  width:100%;
-  padding:8px 0 5px 0;
-  font-size:16px;
-  color: var(--grey-blue);
-  height: 4vh;
+.input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: var(--grey-blue);
+    height: 4vh;
 }
 
-.input-container input:focus{ 
- border:none;	
- outline:none;
- border-bottom:1px solid var(--grey-blue);	
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--grey-blue);
 }
 
 .input-container input:focus ~ label,
-.input-container input:valid ~ label{
-	top:-12px;
-	font-size:12px;
+.input-container input:valid ~ label {
+    top: -12px;
+    font-size: 12px;
     color: var(--grey-blue);
+}
+
+@media only screen and (max-width: 425px) {
+    .first-page {
+        display: none;
+    }
+
+    .about-page {
+        padding-top: 17vh;
+        border: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-title {
+        padding: 0 15px;
+        font-size: 30px;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    #about-title-2 {
+        padding: 0 15px;
+        font-size: 20px;
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+    }
+
+    #about-content {
+        padding: 0 15px;
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+    #logo_twitter {
+        max-width: 70px;
+    }
+
+    #logo_instagram {
+        max-width: 70px;
+    }
+
+    .newsletter-form {
+        padding: 0 40px;
+    }
 }
