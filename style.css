@@ -61,16 +61,31 @@ ul {
     color: var(--grey-blue);
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 425px) {
     .navbar {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: content-box;
+        margin: none;
     }
+
+    .navbar ul li {
+        font-size: 3vh;
+        margin: none;
+    }
+
     .navbar a {
-        color: palegreen;
+        text-decoration: none;
+        color: var(--grey);
+    }
+
+    .navbar ul {
+        display: flex;
     }
 
     .footer {
         font-size: 13px;
+        margin: none;
     }
 }
