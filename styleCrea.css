@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-#crea-img{
+#crea-img {
     display: block;
     margin: auto;
     margin-top: 40px;
@@ -32,7 +32,7 @@
     border-radius: 3px;
     color: var(--grey);
     cursor: pointer;
-    text-align: center;;
+    text-align: center;
     font-size: 18px;
     line-height: 20px;
     width: 130px;
@@ -46,4 +46,42 @@
     background-color: var(--grey);
     border: 1px solid var(--dark-blue);
     color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 425px) {
+    .crea-page {
+        border: none;
+        margin: none;
+    }
+
+    #crea-title {
+        color: var(--dark-blue);
+        text-align: center;
+        padding: 0 15px;
+        font-size: 30px;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    #crea-content {
+        padding: 0 15px;
+        margin: 0;
+        font-size: 15px;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+
+    #crea-img {
+        display: block;
+        margin: 3vh;
+        margin-top: 40px;
+        max-width: 250px;
+    }
+
+    #download_button {
+        position: absolute;
+        top: 97%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
